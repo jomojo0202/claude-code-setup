@@ -28,10 +28,10 @@ footer_content: "Built for an instructor-led 30-minute mentorship session. <a hr
 
 exclude:
   - build-pdfs.ps1
-  - "*.html"
   - marked.min.js
   - edge-temp/
   - Gemfile
   - Gemfile.lock
   - vendor/
   - .github/
+  - README.md
