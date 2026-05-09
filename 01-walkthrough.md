@@ -1,3 +1,8 @@
+---
+title: Live Walkthrough
+nav_order: 2
+---
+
 # Live Walkthrough — Setting Up Claude Code on Windows (30 min)
 
 > Audience: non-developers (marketers, founders, ops people). Native Windows + PowerShell. No WSL.

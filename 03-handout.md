@@ -1,3 +1,8 @@
+---
+title: Attendee Handout
+nav_order: 4
+---
+
 # Claude Code on Windows — Setup Cheatsheet
 
 > Keep this open. Follow it step by step. ~15 minutes start to finish.

@@ -1,3 +1,8 @@
+---
+title: Slide Outline
+nav_order: 3
+---
+
 # Slide Outline + Talking Points — Claude Code on Windows (30 min)
 
 > 8 slides. ~3-4 min per slide on average. Demo is the longest section.

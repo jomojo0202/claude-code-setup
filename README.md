@@ -1,21 +1,29 @@
-# Claude Code on Windows —  Playbook
+---
+title: Home
+layout: home
+nav_order: 1
+---
 
-A complete kit for teaching non-developers how to install and start using **Claude Code** on Windows in 30 minutes.
+# Claude Code on Windows — Playbook
+{: .fs-9 }
 
-> **Quick links:** [Live Walkthrough](./01-walkthrough.html) · [Slide Outline](./02-outline.html) · [Attendee Handout](./03-handout.html) · [Download PDFs](https://github.com/jomojo0202/claude-code-setup/tree/main/pdfs)
+A complete kit for teaching non-developers how to install and start using Claude Code on Windows in 30 minutes.
+{: .fs-5 .fw-300 }
 
-> **Why PowerShell?** It's the modern, Microsoft-supported shell built into Windows 11. Together with Windows Terminal it gives you a zero-install starting point. CMD is legacy. Git Bash is an extra install. WSL2 is the power-user path, but overkill for a 30-min beginner workshop.
+[Open the walkthrough](./01-walkthrough.html){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Download PDFs](https://github.com/jomojo0202/claude-code-setup/tree/main/pdfs){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
-## What's in this repo
+> **Why PowerShell?** It's the modern, Microsoft-supported shell built into Windows 11. Together with Windows Terminal it gives you a zero-install starting point. CMD is legacy. Git Bash is an extra install. WSL2 is the power-user path — worth a follow-up session, but overkill for a 30-min beginner workshop.
 
-| File | What it's for |
+## What's in this site
+
+| Page | What it's for |
 |---|---|
-| [`01-walkthrough.md`](./01-walkthrough.md) | **Live demo script** — minute-by-minute instructions for the instructor, with exact commands, what to say, and what NOT to do live. |
-| [`02-outline.md`](./02-outline.md) | **Slide outline + talking points** — 8-slide structure you can paste into Keynote, Google Slides, or PowerPoint. |
-| [`03-handout.md`](./03-handout.md) | **Attendee handout** — a clean cheatsheet attendees keep after the session so they can repeat the install on their own. |
-| [`pdfs/`](./pdfs) | PDF versions of all three documents, ready to print or share. |
+| [Live Walkthrough](./01-walkthrough.html) | **Live demo script** — minute-by-minute instructions for the instructor, with exact commands, what to say, and what NOT to do live. |
+| [Slide Outline](./02-outline.html) | **Slide outline + talking points** — 8-slide structure you can paste into Keynote, Google Slides, or PowerPoint. |
+| [Attendee Handout](./03-handout.html) | **Attendee handout** — a clean cheatsheet attendees keep after the session so they can repeat the install on their own. |
+| [PDFs](https://github.com/jomojo0202/claude-code-setup/tree/main/pdfs) | PDF versions of all three documents, ready to print or share. |
 
 ---
 
