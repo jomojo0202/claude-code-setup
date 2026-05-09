@@ -10,6 +10,12 @@ color_scheme: light
 search_enabled: true
 heading_anchors: true
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
 aux_links:
   "View on GitHub":
     - "https://github.com/jomojo0202/claude-code-setup"
