@@ -24,8 +24,6 @@ aux_links:
 
 aux_links_new_tab: true
 
-footer_content: "Built for an instructor-led 30-minute mentorship session. <a href=\"https://github.com/jomojo0202/claude-code-setup\">Source on GitHub</a>."
-
 exclude:
   - build-pdfs.ps1
   - marked.min.js
