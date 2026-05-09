@@ -1,4 +1,4 @@
-# Claude Code on Windows — 30-Minute Mentorship Playbook
+# Claude Code on Windows —  Playbook
 
 A complete kit for teaching non-developers how to install and start using **Claude Code** on Windows in 30 minutes.
 
