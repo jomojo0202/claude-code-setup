@@ -1,0 +1,5 @@
+# Local build artifacts (PDFs are kept — see pdfs/)
+*.html
+build-pdfs.ps1
+marked.min.js
+edge-temp/
