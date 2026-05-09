@@ -1,11 +1,9 @@
 title: Claude Code on Windows
 description: 30-minute mentorship playbook for non-developers — install, demo, attendee handout.
 
-remote_theme: just-the-docs/just-the-docs
+theme: just-the-docs
 
 plugins:
-  - jekyll-remote-theme
-  - jekyll-include-cache
   - jekyll-seo-tag
 
 color_scheme: light
@@ -22,7 +20,6 @@ aux_links_new_tab: true
 
 footer_content: "Built for an instructor-led 30-minute mentorship session. <a href=\"https://github.com/jomojo0202/claude-code-setup\">Source on GitHub</a>."
 
-# Don't include build artifacts on the site
 exclude:
   - build-pdfs.ps1
   - "*.html"
@@ -30,3 +27,5 @@ exclude:
   - edge-temp/
   - Gemfile
   - Gemfile.lock
+  - vendor/
+  - .github/

@@ -3,3 +3,9 @@
 build-pdfs.ps1
 marked.min.js
 edge-temp/
+
+# Jekyll
+_site/
+.jekyll-cache/
+vendor/
+Gemfile.lock
