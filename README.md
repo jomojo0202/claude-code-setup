@@ -4,7 +4,7 @@ A complete kit for teaching non-developers how to install and start using **Clau
 
 > **Quick links:** [Live Walkthrough](./01-walkthrough.html) · [Slide Outline](./02-outline.html) · [Attendee Handout](./03-handout.html) · [Download PDFs](https://github.com/jomojo0202/claude-code-setup/tree/main/pdfs)
 
-> **Why PowerShell?** It's the modern, Microsoft-supported shell built into Windows 11. Together with Windows Terminal it gives you a zero-install starting point. CMD is legacy. Git Bash is an extra install. WSL2 is the power-user path — worth a follow-up session, but overkill for a 30-min beginner workshop.
+> **Why PowerShell?** It's the modern, Microsoft-supported shell built into Windows 11. Together with Windows Terminal it gives you a zero-install starting point. CMD is legacy. Git Bash is an extra install. WSL2 is the power-user path, but overkill for a 30-min beginner workshop.
 
 ---
 
