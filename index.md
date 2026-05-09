@@ -4,66 +4,149 @@ layout: default
 nav_order: 1
 ---
 
-# Claude Code on Windows — Playbook
+# Get Claude Code on your Windows in 30 minutes
 {: .fs-9 }
 
-A complete kit for teaching non-developers how to install and start using Claude Code on Windows in 30 minutes.
+An AI assistant that can read your files, edit them, run commands, and finish tasks for you — right from a single window. No coding background needed.
 {: .fs-5 .fw-300 }
 
-[Open the walkthrough](./01-walkthrough.html){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Download PDFs](https://github.com/jomojo0202/claude-code-setup/tree/main/pdfs){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Start the install](#step-1--install-nodejs){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Download the cheatsheet (PDF)](https://github.com/jomojo0202/claude-code-setup/raw/main/pdfs/03-handout.pdf){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
-> **Why PowerShell?** It's the modern, Microsoft-supported shell built into Windows 11. Together with Windows Terminal it gives you a zero-install starting point. CMD is legacy. Git Bash is an extra install. WSL2 is the power-user path — worth a follow-up session, but overkill for a 30-min beginner workshop.
+## What you'll have when you're done
 
-## What's in this site
+- Claude Code installed and signed in on your computer.
+- An AI you can ask to: read CSVs, summarize PDFs, write content, build a one-page website, automate small tasks — all by typing what you want.
+- A cheatsheet you can come back to next time.
 
-| Page | What it's for |
+## Before you start
+
+- A Windows 10 or 11 computer.
+- A web browser.
+- A **Claude.ai** account. Free is fine to test, **Pro ($20/mo) is recommended** for real use.
+
+> **Heads up — what's a terminal?** During the install you'll use **PowerShell** — a window where you type commands instead of clicking buttons. It's already on your computer. We're not installing anything new for the terminal.
+
+---
+
+## Step 1 — Install Node.js
+
+Claude Code is delivered through a tool that comes with Node.js.
+
+1. Open your browser and go to **[nodejs.org](https://nodejs.org)**.
+2. Click the **LTS** download button (the green one on the left). LTS = the stable version.
+3. Run the installer. Click **Next** on every screen — defaults are correct.
+4. When it finishes, **close any PowerShell window that was open** and open a fresh one.
+
+**Open a fresh PowerShell:** press the Windows key, type `Terminal`, press Enter.
+
+**Test it worked.** Paste this into the terminal and press Enter:
+
+```powershell
+node --version
+npm --version
+```
+
+You should see two version numbers like `v20.11.0` and `10.2.4`. If you see "not recognized," close the terminal and open a new one.
+
+---
+
+## Step 2 — Install Claude Code
+
+In the terminal, paste this and press Enter:
+
+```powershell
+npm install -g @anthropic-ai/claude-code
+```
+
+Wait 30–60 seconds. When you get a prompt back, test it:
+
+```powershell
+claude --version
+```
+
+> **Permission error?** Close the terminal. Right-click the terminal icon and choose **Run as administrator**. Try the install command again.
+
+---
+
+## Step 3 — Sign in
+
+In the terminal, type:
+
+```powershell
+claude
+```
+
+A first-run screen appears. Choose **"Sign in with Claude account."**
+
+A browser window opens. Log in with your Claude.ai account, click **Authorize**, then go back to the terminal.
+
+You're in.
+
+---
+
+## Step 4 — Try it
+
+Let's give Claude something real to do.
+
+1. On your Desktop, make a new folder called `claude-test`.
+2. In the terminal, run:
+
+   ```powershell
+   cd $HOME\Desktop\claude-test
+   claude
+   ```
+
+3. At the prompt, type any of these:
+
+   > "Make me a simple HTML page that lists my top 3 favorite books with a one-sentence review each. Open it in my browser when done."
+
+   > "Write me three social media post ideas about coffee, in a friendly tone."
+
+   > "Create a checklist for my morning routine, save it as a text file."
+
+Watch what happens. Claude will create the file, ask permission, and open or save it for you.
+
+---
+
+## Useful commands
+
+| Command | What it does |
 |---|---|
-| [Live Walkthrough](./01-walkthrough.html) | **Live demo script** — minute-by-minute instructions for the instructor, with exact commands, what to say, and what NOT to do live. |
-| [Slide Outline](./02-outline.html) | **Slide outline + talking points** — 8-slide structure you can paste into Keynote, Google Slides, or PowerPoint. |
-| [Attendee Handout](./03-handout.html) | **Attendee handout** — a clean cheatsheet attendees keep after the session so they can repeat the install on their own. |
-| [PDFs](https://github.com/jomojo0202/claude-code-setup/tree/main/pdfs) | PDF versions of all three documents, ready to print or share. |
+| `claude` | Start Claude in the current folder |
+| `claude --resume` | Continue your last conversation |
+| `/help` | Inside Claude, see all commands |
+| `/clear` | Inside Claude, start a fresh conversation |
+| `cd path\to\folder` | Move the terminal to a folder |
+| `exit` (or Ctrl+D) | Leave Claude |
 
 ---
 
-## Audience this is built for
+## Stuck?
 
-- **Non-developers** — marketers, founders, ops, support staff.
-- **Windows 11** users who have never touched a terminal.
-- **30 minutes** of session time (with the option to expand to 60 if you add WSL2).
-
----
-
-## How to run the session
-
-1. Skim [`01-walkthrough.md`](./01-walkthrough.md) the day before — it tells you what to install on your demo machine ahead of time.
-2. Build your slides from [`02-outline.md`](./02-outline.md).
-3. Email or print [`03-handout.md`](./03-handout.md) (or [`pdfs/03-handout.pdf`](./pdfs/03-handout.pdf)) for attendees.
-4. Run the session. Stick to the time budget in the walkthrough.
+| Problem | Fix |
+|---|---|
+| `node` is "not recognized" after install | Close the terminal, open a new one, try again. |
+| `npm install` fails with permission error | Run the terminal as Administrator (right-click → Run as admin). |
+| `claude` won't start | Run `npm install -g @anthropic-ai/claude-code` again. |
+| Browser doesn't open during sign-in | Copy the URL it printed, paste into your browser manually. |
+| Want to start over | Run `claude`, type `/logout`. Then `claude` again to sign in fresh. |
 
 ---
 
-## What gets installed during the session
+## Where to go next
 
-- **Node.js LTS** (provides `npm`)
-- **Claude Code** (`npm install -g @anthropic-ai/claude-code`)
-- **Authentication** via Claude.ai account (no API key for beginners)
+- Inside Claude, type **`/help`** — explore everything it can do.
+- Drop a text file called **`CLAUDE.md`** into any folder. Whatever you write inside teaches Claude your preferences for that folder. Example:
 
-That's it. No Docker, no WSL, no Visual Studio.
+  > "I run a Shopify store. Always answer in Arabic. Never edit files in the `/backups` folder."
 
----
-
-## Where to go after the session
-
-- `/help` inside Claude — explore commands.
-- `claude --resume` — pick up your last conversation.
-- **CLAUDE.md** — drop a text file in any folder to teach Claude your preferences.
-- **Skills** — type `/skills` inside Claude to see pre-built experts.
-- **WSL2** — the next step once attendees are comfortable. Worth a follow-up session.
+- Type **`/skills`** inside Claude to see pre-built experts (marketing, copywriting, ads, and more).
+- Read the official docs: **[docs.claude.com/claude-code](https://docs.claude.com/claude-code)**.
 
 ---
 
-## Credits
+## Save this page
 
-Built for an instructor-led mentorship session. PRs welcome — if you ran the workshop and learned something, send a fix.
+Bookmark this URL or download the [PDF cheatsheet](https://github.com/jomojo0202/claude-code-setup/raw/main/pdfs/03-handout.pdf) so you can come back to it.

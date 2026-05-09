@@ -1,6 +1,6 @@
 ---
-title: Slide Outline
-nav_order: 3
+title: Slide Outline (instructor)
+nav_exclude: true
 ---
 
 # Slide Outline + Talking Points — Claude Code on Windows (30 min)

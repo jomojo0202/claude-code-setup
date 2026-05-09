@@ -1,6 +1,6 @@
 ---
-title: Live Walkthrough
-nav_order: 2
+title: Live Walkthrough (instructor)
+nav_exclude: true
 ---
 
 # Live Walkthrough — Setting Up Claude Code on Windows (30 min)

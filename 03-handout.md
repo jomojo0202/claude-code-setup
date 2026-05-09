@@ -1,6 +1,6 @@
 ---
-title: Attendee Handout
-nav_order: 4
+title: Print-friendly version
+nav_exclude: true
 ---
 
 # Claude Code on Windows — Setup Cheatsheet
