@@ -16,14 +16,6 @@ defaults:
     values:
       layout: default
 
-aux_links:
-  "View on GitHub":
-    - "https://github.com/jomojo0202/claude-code-setup"
-  "Download PDFs":
-    - "https://github.com/jomojo0202/claude-code-setup/tree/main/pdfs"
-
-aux_links_new_tab: true
-
 exclude:
   - build-pdfs.ps1
   - marked.min.js
@@ -33,3 +25,7 @@ exclude:
   - vendor/
   - .github/
   - README.md
+  - 01-walkthrough.md
+  - 02-outline.md
+  - 03-handout.md
+  - pdfs/

@@ -10,7 +10,7 @@ nav_order: 1
 An AI assistant that can read your files, edit them, run commands, and finish tasks for you — right from a single window. No coding background needed.
 {: .fs-5 .fw-300 }
 
-[Start the install](#step-1--install-nodejs){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Download the cheatsheet (PDF)](https://github.com/jomojo0202/claude-code-setup/raw/main/pdfs/03-handout.pdf){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Start the install](#step-1--install-nodejs){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 ---
 
@@ -149,4 +149,4 @@ Watch what happens. Claude will create the file, ask permission, and open or sav
 
 ## Save this page
 
-Bookmark this URL or download the [PDF cheatsheet](https://github.com/jomojo0202/claude-code-setup/raw/main/pdfs/03-handout.pdf) so you can come back to it.
+Bookmark this URL so you can come back to it.
